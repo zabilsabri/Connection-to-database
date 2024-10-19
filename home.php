@@ -12,6 +12,7 @@
 </head>
 <body>
     <a href="input.php">Tambah</a>
+    <a href="input_file.php">Upload File</a>
     <table style="border: solid" >
         <tr>
             <th>Nama</th>

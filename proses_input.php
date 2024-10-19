@@ -9,8 +9,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     $in->bind_param('ss', $nama, $nim);
 
     if($in->execute()){
+        $conn->close();
         header('Location: home.php');
     } else {
+        $conn->close();
         echo "Error: " . $in->error;
     }
 

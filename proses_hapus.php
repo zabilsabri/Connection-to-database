@@ -7,6 +7,7 @@ $query = $conn->prepare('DELETE FROM users WHERE id = ?');
 $query->bind_param('s', $id);
 
 if($query->execute()){
+    $conn->close();
     header('Location: home.php');
 } else {
     echo 'Error: ' . $delete->error;
